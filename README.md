@@ -52,14 +52,14 @@ El repositorio está organizado de la siguiente manera para mantener el código 
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com
-cd urban-grocers-api-tests
+git clone https://github.com/AxelCastanedaG/qa-project-Urban-Grocers-app-es.git
+cd qa-project-Urban-Grocers-app-es
 ```
 
 ### 2. Instalar dependencias
-Asegúrate de contar con un entorno virtual activo e instala los paquetes necesarios:
+Asegúrate de contar con un entorno virtual activo e instala los paquetes necesarios usando el archivo de requerimientos:
 ```bash
-pip install pytest requests
+pip install -r requirements.txt
 ```
 
 ### 3. Ejecutar la suite de pruebas
