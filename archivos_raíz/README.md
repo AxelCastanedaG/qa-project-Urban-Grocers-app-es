@@ -48,6 +48,30 @@ El repositorio está organizado de la siguiente manera para mantener el código 
 
 ---
 
+## Mi Rol y Decisiones de QA
+
+Como **QA Engineer Junior**, mi objetivo principal en este proyecto fue asegurar la calidad funcional del sistema y el cumplimiento de las reglas del negocio, enfocándome en la validación y robustez del parámetro `name`.
+
+### ¿Qué analicé?
+* **Documentación oficial:** Revisé a detalle la especificación de la `apiDoc` para el endpoint de creación de kits.
+* **Objetivo:** Identificar y desglosar los límites permitidos para el ingreso de cadenas de texto (strings).
+
+### Técnicas de diseño de pruebas aplicadas
+Para no hacer pruebas repetitivas y optimizar el tiempo, apliqué los conceptos teóricos básicos de testing:
+* **Partición de Equivalencia**
+* **Análisis de Valores Límite (Boundary Testing)**
+
+### Riesgos cubiertos y casos de prueba
+Diseñé y ejecuté escenarios específicos para evitar fallos comunes en producción:
+* **Entradas inválidas:** Validé el comportamiento del sistema usando caracteres especiales, strings vacíos y espacios en blanco.
+* **Pruebas de longitud extrema:** Validé los límites del campo ingresando longitudes críticas: `0`, `1`, `2`, un carácter menos del límite, el límite exacto y un carácter de más.
+* **Control de errores:** Verifiqué que las peticiones inválidas devuelvan los mensajes de error corporativos correctos en lugar de romper el servidor (evitando los molestos errores 500).
+
+### 💡 Aprendizajes clave
+Este proyecto me ayudó a entender cómo aplicar la teoría matemática de límites en el día a día. Logré reducir el número de scripts necesarios, haciendo mi suite de pruebas mucho más eficiente.
+
+---
+
 ## 🚀 Cómo Ejecutar las Pruebas Localmente
 
 ### 1. Clonar el repositorio
