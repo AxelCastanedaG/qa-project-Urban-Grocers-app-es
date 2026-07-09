@@ -1,5 +1,6 @@
-import sender_stand_request
-import data
+from data import data, sender_stand_request
+
+
 def get_kit_body(name):
     current_body = data.kit_body.copy()
     current_body["name"] = name
